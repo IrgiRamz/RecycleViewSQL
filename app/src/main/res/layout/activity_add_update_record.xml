@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUpdateRecordActivity">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profileIv"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_camera_black"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        app:c_border="true"
+        app:c_border_width="1dp"
+        app:c_border_color="@color/colorGray"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_below="@+id/profileIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:hint="Nama Pahlawan"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edt_lahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="Tanggal Lahir"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_asal"
+        android:layout_below="@+id/edt_lahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:hint="Asal"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edt_informasi"
+        android:layout_below="@+id/edt_asal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:hint="Informasi"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edt_userBio"
+        android:layout_below="@+id/edt_informasi"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/shape_rectangle"
+        android:gravity="start"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:hint="Deskripsi"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/edt_userBio"
+        android:src="@drawable/ic_done_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Tambah"
+        android:textColor="@color/colorWhite"/>
+</RelativeLayout>
